@@ -10,10 +10,11 @@ The dataset consists of 400 images of metallic surfaces.
 * **Nick:** 48 images
 
 ###  Dataset Access
-You can download the dataset from the following link:
-* **Download Link:** [Click Here to Access Dataset](https://www.kaggle.com/datasets/vipin20/industrial-surface-defect-detection)
-* **Folder Structure:** Place the downloaded images in a folder named `/data` in the root directory.
+The dataset is hosted on Kaggle. You can access it here:
+* **Kaggle Link:** [GKN Blade Surface Defect Dataset](https://www.kaggle.com/datasets/warcoder/gkn-blade-surface-defect-dataset)
 
+**Note:** If you are running this project on Kaggle, the data is located at:
+`/kaggle/input/gkn-blade-surface-defect-dataset/GKN Blade Surface Defect Dataset/Data_GKN`
 > **Note:** A significant **Class Imbalance** was identified ('Nick' is only 12%). Data Augmentation is recommended for future improvements.
 
 ##  Technical Stack
