@@ -11,7 +11,7 @@ The dataset consists of 400 images of metallic surfaces.
 
 ###  Dataset Access
 You can download the dataset from the following link:
-* **Download Link:** [Click Here to Access Dataset](https://your-dataset-link-here.com) 
+* **Download Link:** [Click Here to Access Dataset](https://www.kaggle.com/datasets/vipin20/industrial-surface-defect-detection)
 * **Folder Structure:** Place the downloaded images in a folder named `/data` in the root directory.
 
 > **Note:** A significant **Class Imbalance** was identified ('Nick' is only 12%). Data Augmentation is recommended for future improvements.
