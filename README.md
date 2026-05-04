@@ -1,32 +1,33 @@
 # Industrial Surface Defect Detection Project
 
 ## Project Overview
-This project applies Computer Vision and Deep Learning to automate quality control for industrial components, specifically GKN blade surfaces. The system is designed to analyze images and classify the surface condition into one of three categories: Good, Nick, or Scratch. This helps in identifying structural flaws without the need for manual human inspection.
+This project applies Computer Vision and Deep Learning to automate quality control for industrial components (GKN blade surfaces). The system classifies surface conditions into: **Good, Nick, or Scratch**.
 
-## Dataset Information
-The dataset consists of 400 images of metallic surfaces categorized into three classes:
-* Good: 203 images (Clean surfaces).
-* Scratch: 149 images (Linear surface marks).
-* Nick: 48 images (Small chips or gouges).
+##  Dataset Information
+The dataset consists of 400 images of metallic surfaces.
+* **Good:** 203 images
+* **Scratch:** 149 images
+* **Nick:** 48 images
 
-Note: The images are stored in the `/data` folder, organized by category. You can also access the dataset through the project documentation links.
+###  Dataset Access
+You can download the dataset from the following link:
+* **Download Link:** [Click Here to Access Dataset](https://your-dataset-link-here.com) 
+* **Folder Structure:** Place the downloaded images in a folder named `/data` in the root directory.
 
-Important Observation:
-A significant Class Imbalance was identified, as the 'Nick' category represents only about 12% of the total data. Future work will require Data Augmentation techniques to balance the classes and improve model accuracy for this specific defect.
+> **Note:** A significant **Class Imbalance** was identified ('Nick' is only 12%). Data Augmentation is recommended for future improvements.
 
-## Technical Stack
-The project is built using Python and the following core libraries:
-* OpenCV: Used for image loading and processing tasks.
-* Matplotlib: Used for visualizing data distributions and displaying image samples.
-* Numpy: Used for handling image arrays and mathematical operations.
+##  Technical Stack
+* **OpenCV**: Image processing and resizing.
+* **Matplotlib**: Data visualization.
+* **Numpy**: Array manipulations.
 
-## Engineering Challenges
-* Image Consistency: The source images have varying resolutions (e.g., 1328x1108 and 1182x1339). All images must be resized to a uniform shape before being fed into a neural network.
-* Data Distribution: Managing the low sample count for specific defects to prevent the model from becoming biased toward the 'Good' class.
+##  Troubleshooting 
+If you get a `SyntaxError` when importing `cv2` or `numpy`:
+1. Ensure you do **not** have a file named `numpy.py` or `cv2.py` in your project folder or Downloads folder.
+2. If such a file exists, rename it (e.g., `my_notes.py`) and delete any `__pycache__` folders.
 
-## How to Run
-1. Clone this repository to your local machine.
-2. Ensure the dataset is placed in the `/data` directory.
-3. Install the necessary dependencies:
+##  How to Run
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
    pip install opencv-python matplotlib numpy
-4. Open and run the Jupyter Notebook `Surface_Defect_Detection.ipynb` to view the analysis and visualization steps.
