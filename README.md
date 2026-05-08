@@ -1,9 +1,9 @@
-# 🛡️ Industrial Surface Defect Detection (GKN Blade)
+#  Industrial Surface Defect Detection (GKN Blade)
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on automating quality control in industrial manufacturing. Using **Computer Vision** and classical **Image Processing** techniques, the system detects and classifies defects on metallic GKN blade surfaces. This automated pipeline ensures high precision, reduces human error, and provides a low-latency alternative to deep learning models for real-time inspection.
 
-## 📊 Dataset Information
+##  Dataset Information
 The dataset contains **400 high-resolution images** categorized into three types of surface conditions. 
 - **Dataset Source:** [GKN Blade Surface Defect Dataset (Kaggle)](https://www.kaggle.com/datasets/warcoder/gkn-blade-surface-defect-dataset)
 
@@ -15,7 +15,7 @@ The dataset contains **400 high-resolution images** categorized into three types
 
 ---
 
-## 🛠️ Engineering Challenges & Solutions
+##  Engineering Challenges & Solutions
 
 ### 1. Data Integrity & Stability
 **Challenge:** Real-world datasets often contain corrupted files that can crash automated code.
@@ -31,7 +31,7 @@ The dataset contains **400 high-resolution images** categorized into three types
 
 ---
 
-## 💻 Core Implementation (The Pipeline)
+##  Core Implementation (The Pipeline)
 
 Below is the optimized Python snippet representing the core logic of the inspection system:
 
